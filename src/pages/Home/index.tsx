@@ -1,12 +1,13 @@
-import { Button, Image, StyleSheet, Text, View } from "react-native";
+import {  Image, StyleSheet, Text, View } from "react-native";
 import { Video, ResizeMode } from "expo-av";
 
 export function Home(){
   return (
     <View style={styles.container}>
       <Video
-        source={require('assets/dribles.mp4')}
+        source={require('src/assets/images/dribles.mp4')}
         shouldPlay
+        isMuted
         isLooping
         style={styles.backgroundVideo}
         resizeMode={ResizeMode.COVER}
